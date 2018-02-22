@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12sp">
+
+            <TextView
+                android:id="@+id/category_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12sp"
+                android:text="@string/category_header"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/edit_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/delete_entry"
+                android:src="@mipmap/edit_entry" />
+
+            <ImageView
+                android:id="@+id/delete_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/delete_entry_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1sp"
+            android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/relative">
+
+            <TextView
+                android:id="@+id/fragment_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12sp"
+                android:textColor="@color/background"
+                android:textSize="24sp" />
+
+            <Switch
+                android:id="@+id/locker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="12sp"
+                android:text="Show    "
+                android:textColor="@color/background" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1sp"
+            android:background="@color/colorPrimary" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/detail_values_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/details_are_locked"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:padding="16sp"
+                android:textColor="@color/white"
+                android:id="@+id/lock_view"
+                android:background="@color/background"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

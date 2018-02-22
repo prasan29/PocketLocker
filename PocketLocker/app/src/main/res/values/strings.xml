@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Pocket Locker</string>
+    <string name="editor_reset_string">reset_passcode</string>
+    <string name="editor_pattern_string">the_pattern</string>
+    <string name="editor_is_registered_string">registered</string>
+    <string name="header_text">Please draw a pattern to login</string>
+    <string name="login_text">Login!</string>
+    <string name="header_text_register">Please draw a pattern to register</string>
+    <string name="delete_layout_text">Reset account:</string>
+    <string name="draw_pattern_text">Please draw your pattern!</string>
+    <string name="welcome">Pocket\nLocker</string>
+    <string name="forgot_pattern_menu">Forgot pattern</string>
+    <string name="delete_content">Please enter the 6-digit passcode to continue!</string>
+    <string name="register_content">Please provide a 6-digit passcode, that will be useful if you forget the pattern</string>
+    <string name="toast_passcode">Please enter a valid 6-digit passcode!</string>
+    <string name="pattern_please">Pattern please!</string>
+    <string name="logout">Logout</string>
+    <string name="field">Field</string>
+    <string name="unique_name">Unique name</string>
+    <string name="unique_name_hint"><font size="14">Enter an unique name for this entry...</font></string>
+    <string name="details">details</string>
+    <string name="empty_view_text">Welcome to Pocket locker</string>
+    <string name="empty_view_tap_text">Tap here to get started</string>
+    <string name="category_header">Category</string>
+    <string name="add_details">Add details</string>
+    <string name="please_choose_a_category">Please choose a category...</string>
+    <string name="details_are_locked">
+        <b>Details LOCKED!</b>
+        <small>\n\n Please click on \"Show\" to view the details</small>
+    </string>
+</resources>
